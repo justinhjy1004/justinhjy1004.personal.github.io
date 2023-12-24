@@ -1,9 +1,7 @@
-<!-- Slightly Modified from _layouts/home.html -->
-
 <!DOCTYPE HTML>
 <html lang="en" >
     <head><meta charset="UTF-8">
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Justin Ho</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Publications · Justin Ho</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="description" content="Build Jekyll site with the GitBook style.
 "><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="HE Tao"><link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/style.css">
 <link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
@@ -27,9 +25,9 @@
 
 
 
-
+            <link rel="prev" href="/jekyll-gitbook/pages/projects/" />
         
-            <link rel="next" href="/jekyll-gitbook" />
+
         
     </head>
     <body>
@@ -100,12 +98,15 @@
                         </li>
                     
                         
-                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/pages/publications/">
+                        <li class="chapter active" data-level="1.2" data-path="/jekyll-gitbook/pages/publications/">
                         
                             <a href="/jekyll-gitbook/pages/publications/" onclick="pageScrollToTop(this)">
                                 Publications
                             </a>
                             
+                                
+                                    
+
                                 
                             
                         </li>
@@ -134,33 +135,29 @@
                     <h1>
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         
-                            <a href="." >Justin Ho</a>
+                            <a href="." >Publications</a>
                         
                     </h1>
                 </div>
 
-                <div class="body-inner">
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            <section class="normal markdown-section">
-                                
-                                    <h1 id="">Justin Ho</h1>
-                                
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
 
-                                <br />
-                            </section>
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/pages/publications">Publications</h1>
+                    
 
-                            <!-- Slightly Modified from _layouts/home.html -->
+                    <div style="text-align: center"><img src="https://github.com/justinhjy1004/jekyll-gitbook/blob/master/assets/dinosaur.gif?raw=true" /></div>
 
-<div id="book-search-input-inside" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
+<p><br /></p>
 
-
-                            <div id="book-search-results">
-                                <div class="search-noresults">
-                                    
-                                </div><div class="search-results">
+<p>Wow so empty…</p>
+</section>
+            </div><div class="search-results">
     <div class="has-results">
         <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
@@ -169,8 +166,58 @@
         <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
     </div>
 </div></div>
-                        </div>
-                    </div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/jekyll-gitbook/pages/projects/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Projects">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
                 </div>
             </div>
 
@@ -182,17 +229,6 @@
         "title": "Introduction",
         "level": "1.1",
         "depth": 1,
-        
-
-        
-        "next": {
-            "title": "",
-            "level": "1.2",
-            "depth": 1,
-            "path": "",
-            "ref": "",
-            "articles": []
-        },
         
         "dir": "ltr"
     },    "config": {
@@ -283,8 +319,8 @@
         "gitbook": "*"
     },
     "file": {
-        "path": "assets/search.html",
-        "mtime": "",
+        "path": "_pages/publications.md",
+        "mtime": "2023-12-24 00:00:00 -0500",
         "type": "markdown"
     },
     "gitbook": {
